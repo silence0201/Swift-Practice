@@ -98,6 +98,35 @@ class AnimationViewController: UIViewController {
 
     }
     
+    /*循环引用：虽然利用ARC以及解决了内存自动释放的问题，程序员不用手动释放内存，但是如果a引用了b，b又引用a，那么会造成循环引用，导致ab都得不到释放。
+     1.类循环引用的话，需要这样
+     class B {
+     weak var a: A? = nil  ----  这一步可以避免出现循环引用
+     deinit {
+     print("B deinit")
+     }
+     }
+     2.闭包
+     lazy var printName: ()->() = {
+     [weak self] in    ------  采用添加标注的方式避免出现
+     if let strongSelf = self {    ------  判断self是否被释放
+     print("The name is \(strongSelf.name)")
+     }
+     }
+     3.如果闭包有多个需要标注，unowned标注，表示整个过程中self都不会被释放，如果self被释放，那么会造成奔溃。
+     // 标注前
+     { (number: Int) -> Bool in
+     //...
+     return true
+     }
+     // 标注后
+     { [unowned self, weak someObject] (number: Int) -> Bool in
+     //...
+     return true
+     }
+     */
+
+    
     deinit {
         print("VC销毁了")
     }
