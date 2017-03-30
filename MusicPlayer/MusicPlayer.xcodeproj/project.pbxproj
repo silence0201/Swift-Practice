@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		E888C4501E8CDC6800277A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C44F1E8CDC6800277A3C /* AppDelegate.swift */; };
 		E888C4521E8CDC6800277A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C4511E8CDC6800277A3C /* ViewController.swift */; };
-		E888C4551E8CDC6800277A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E888C4531E8CDC6800277A3C /* Main.storyboard */; };
 		E888C4571E8CDC6800277A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E888C4561E8CDC6800277A3C /* Assets.xcassets */; };
 		E888C45A1E8CDC6800277A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E888C4581E8CDC6800277A3C /* LaunchScreen.storyboard */; };
+		E888C4631E8CDD5100277A3C /* 成都.m4r in Resources */ = {isa = PBXBuildFile; fileRef = E888C4611E8CDCF100277A3C /* 成都.m4r */; };
+		E888C4641E8CDD5100277A3C /* 童话镇.m4r in Resources */ = {isa = PBXBuildFile; fileRef = E888C4621E8CDCF100277A3C /* 童话镇.m4r */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E888C44C1E8CDC6800277A3C /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E888C44F1E8CDC6800277A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E888C4511E8CDC6800277A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E888C4541E8CDC6800277A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E888C4561E8CDC6800277A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E888C4591E8CDC6800277A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E888C45B1E8CDC6800277A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E888C4611E8CDCF100277A3C /* 成都.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = "成都.m4r"; sourceTree = "<group>"; };
+		E888C4621E8CDCF100277A3C /* 童话镇.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = "童话镇.m4r"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		E888C44E1E8CDC6800277A3C /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E888C4611E8CDCF100277A3C /* 成都.m4r */,
+				E888C4621E8CDCF100277A3C /* 童话镇.m4r */,
 				E888C44F1E8CDC6800277A3C /* AppDelegate.swift */,
 				E888C4511E8CDC6800277A3C /* ViewController.swift */,
-				E888C4531E8CDC6800277A3C /* Main.storyboard */,
 				E888C4561E8CDC6800277A3C /* Assets.xcassets */,
 				E888C4581E8CDC6800277A3C /* LaunchScreen.storyboard */,
 				E888C45B1E8CDC6800277A3C /* Info.plist */,
@@ -123,9 +126,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E888C4631E8CDD5100277A3C /* 成都.m4r in Resources */,
+				E888C4641E8CDD5100277A3C /* 童话镇.m4r in Resources */,
 				E888C45A1E8CDC6800277A3C /* LaunchScreen.storyboard in Resources */,
 				E888C4571E8CDC6800277A3C /* Assets.xcassets in Resources */,
-				E888C4551E8CDC6800277A3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +148,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E888C4531E8CDC6800277A3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E888C4541E8CDC6800277A3C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E888C4581E8CDC6800277A3C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
