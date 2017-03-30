@@ -12,24 +12,19 @@ class ChildBVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let imageView = UIImageView(frame: SRect)
+        imageView.image = UIImage(named: "2")
+        imageView.contentMode = .scaleAspectFill
+        view.addSubview(imageView)
+        
+        view.backgroundColor = UIColor.orange
+        let tap = UITapGestureRecognizer(target: self, action: #selector(jump))
+        view.addGestureRecognizer(tap)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func jump() {
+        // 发送跳转通知
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:JumpNotification), object: nil)
     }
-    */
-
 }

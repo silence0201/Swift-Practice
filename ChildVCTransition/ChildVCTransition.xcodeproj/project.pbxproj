@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		E888C40A1E8CCACB00277A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C4091E8CCACB00277A3C /* AppDelegate.swift */; };
 		E888C40C1E8CCACB00277A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C40B1E8CCACB00277A3C /* ViewController.swift */; };
-		E888C40F1E8CCACB00277A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E888C40D1E8CCACB00277A3C /* Main.storyboard */; };
 		E888C4111E8CCACB00277A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E888C4101E8CCACB00277A3C /* Assets.xcassets */; };
 		E888C4141E8CCACB00277A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E888C4121E8CCACB00277A3C /* LaunchScreen.storyboard */; };
+		E888C41C1E8CCBA300277A3C /* ChildAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C41B1E8CCBA300277A3C /* ChildAVC.swift */; };
+		E888C41E1E8CCBB600277A3C /* ChildBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E888C41D1E8CCBB600277A3C /* ChildBVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E888C4061E8CCACB00277A3C /* ChildVCTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildVCTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E888C4091E8CCACB00277A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E888C40B1E8CCACB00277A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E888C40E1E8CCACB00277A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E888C4101E8CCACB00277A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E888C4131E8CCACB00277A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E888C4151E8CCACB00277A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E888C41B1E8CCBA300277A3C /* ChildAVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildAVC.swift; sourceTree = "<group>"; };
+		E888C41D1E8CCBB600277A3C /* ChildBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildBVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				E888C4091E8CCACB00277A3C /* AppDelegate.swift */,
 				E888C40B1E8CCACB00277A3C /* ViewController.swift */,
-				E888C40D1E8CCACB00277A3C /* Main.storyboard */,
 				E888C4101E8CCACB00277A3C /* Assets.xcassets */,
 				E888C4121E8CCACB00277A3C /* LaunchScreen.storyboard */,
 				E888C4151E8CCACB00277A3C /* Info.plist */,
+				E888C41B1E8CCBA300277A3C /* ChildAVC.swift */,
+				E888C41D1E8CCBB600277A3C /* ChildBVC.swift */,
 			);
 			path = ChildVCTransition;
 			sourceTree = "<group>";
@@ -125,7 +128,6 @@
 			files = (
 				E888C4141E8CCACB00277A3C /* LaunchScreen.storyboard in Resources */,
 				E888C4111E8CCACB00277A3C /* Assets.xcassets in Resources */,
-				E888C40F1E8CCACB00277A3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +138,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E888C41E1E8CCBB600277A3C /* ChildBVC.swift in Sources */,
 				E888C40C1E8CCACB00277A3C /* ViewController.swift in Sources */,
 				E888C40A1E8CCACB00277A3C /* AppDelegate.swift in Sources */,
+				E888C41C1E8CCBA300277A3C /* ChildAVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E888C40D1E8CCACB00277A3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E888C40E1E8CCACB00277A3C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E888C4121E8CCACB00277A3C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
